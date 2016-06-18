@@ -10,13 +10,13 @@ typedef TooltipOptions = {
 }
 
 class Tooltip {
-	public static inline function tooltip( j : js.JQuery , ?opts:TooltipOptions = null ) : js.JQuery {
+	public static inline function tooltip( j : JQuery , ?opts:TooltipOptions = null ) : JQuery {
 		return untyped j.tooltip( opts );
 	}
 
-	public static inline function tooltipToggle( j : js.JQuery ) : js.JQuery { return untyped j.tooltip( "toggle" ); }
-	public static inline function tooltipShow( j : js.JQuery )   : js.JQuery { return untyped j.tooltip( "show" ); }
-	public static inline function tooltipHide( j : js.JQuery )   : js.JQuery { return untyped j.tooltip( "hide" ); }
+	public static inline function tooltipToggle( j : JQuery ) : JQuery { return untyped j.tooltip( "toggle" ); }
+	public static inline function tooltipShow( j : JQuery )   : JQuery { return untyped j.tooltip( "show" ); }
+	public static inline function tooltipHide( j : JQuery )   : JQuery { return untyped j.tooltip( "hide" ); }
 
 #if !noEmbedBootstrap
 	public static function __init__() { bootstrap.Lib.includeFile( "js/bootstrap-tooltip.js" ); }

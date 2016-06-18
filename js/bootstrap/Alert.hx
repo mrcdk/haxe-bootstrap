@@ -2,11 +2,11 @@ package js.bootstrap;
 
 class Alert {
 
-	public static inline function alert( j : js.JQuery ) : js.JQuery {
+	public static inline function alert( j : JQuery ) : JQuery {
 		return untyped j.alert();
 	}
 
-	public static inline function alertClose( j : js.JQuery ) : js.JQuery {
+	public static inline function alertClose( j : JQuery ) : JQuery {
 		return untyped j.alert("close");
 	}
 

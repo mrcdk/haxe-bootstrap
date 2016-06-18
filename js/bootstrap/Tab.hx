@@ -2,10 +2,10 @@ package js.bootstrap;
 
 class Tab
 {
-	public static inline function tab( j : js.JQuery ) : js.JQuery
+	public static inline function tab( j : JQuery ) : JQuery
 		return untyped j.tab();
 
-	public static inline function tabShow( j : js.JQuery ) : js.JQuery
+	public static inline function tabShow( j : JQuery ) : JQuery
 		return untyped j.tab( "show" );
 
 	#if !noEmbedBootstrap

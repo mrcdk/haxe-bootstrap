@@ -2,7 +2,7 @@ package js.bootstrap;
 
 class Dropdown {
 
-	public static inline function dropdown( j : js.JQuery ) : js.JQuery {
+	public static inline function dropdown( j : JQuery ) : JQuery {
 		return untyped j.dropdown();
 	}
 	
